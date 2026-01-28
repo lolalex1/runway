@@ -74,11 +74,6 @@ Runway treats your finances as a **planning problem**, not a data-mining opportu
 - Vite
 - Tailwind CSS
 - shadcn/ui
-- Zustand (state)
-- Recharts (visualisation)
-- Local-first persistence (localStorage / IndexedDB)
-
-Backend and authentication are intentionally deferred.
 
 ---
 
