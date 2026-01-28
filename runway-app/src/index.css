@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  /* Pure neutral greys (chroma = 0) */
+  --color-bg: oklch(0.18 0 0);
+  --color-surface: oklch(0.22 0 0);
+  --color-surface-elevated: oklch(0.26 0 0);
+
+  --color-border: oklch(0.32 0 0);
+
+  --color-text: oklch(0.96 0 0);
+  --color-text-muted: oklch(0.78 0 0);
+
+  /* Keep accent & status as the only actual colors */
+  --color-accent: oklch(0.78 0.10 215);
+
+  --color-good: oklch(0.76 0.12 150);
+  --color-warn: oklch(0.82 0.12 85);
+  --color-bad: oklch(0.72 0.14 25);
+}
+
+:root {
+  font-family: "Geist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: oklch(0.18 0 0);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
