@@ -2,7 +2,8 @@ import { useState } from 'react'
 import './App.css'
 
 // Pages
-import CalendarPage from './pages/calendar'
+import CalendarPage from './pages/calendar';
+import People from './pages/people';
 
 // Icons
 import { HiCalendarDateRange } from "react-icons/hi2";
@@ -15,7 +16,7 @@ function App() {
 
 	return (
 		<>
-			<div className="w-screen h-screen pt-12 flex flex-col items-center">
+			<div className="w-screen h-fit pt-12 flex flex-col items-center pb-4">
 				<div className="w-3/4 h-fit p-4 rounded-lg bg-surface-elevated flex flex-row justify-between items-center">
 					<div className="flex flex-col gap-2">
 						<span className="text-white font-bold text-2xl">Welcome back, Alex!</span>
@@ -46,7 +47,7 @@ function App() {
 					</div>
 					<div className="w-full h-fit pl-4">
 						{page === 'calendar' && <CalendarPage />}
-						{page === 'people' && <span className="text-white text-3xl font-bold">People Page</span>}
+						{page === 'people' && <People />}
 						{page === 'shared' && <span className="text-white text-3xl font-bold">Shared Page</span>}
 						{page === 'settings' && <span className="text-white text-3xl font-bold">Settings Page</span>}
 					</div>
